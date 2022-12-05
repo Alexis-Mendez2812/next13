@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Counter from "../posts/Counter";
+import Counter from "../(with-banner)/posts/Counter";
 import styles from "./Navigation.module.css"
 
 const links = [
