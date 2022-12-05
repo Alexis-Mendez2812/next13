@@ -32,3 +32,53 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Pasos de configuracion:
+
+- Eliminar carpeta pages
+- Crear carpeta app
+- En archivo next.config.js sustituir con el siguiente codigo:
+
+```bash
+#<-------------------->
+
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  experimental:{
+    appDir:true
+  },
+  reactStrictMode: true,
+}
+
+module.exports = nextConfig
+
+#<-------------------->
+```
+
+- Ejecutar : npm install standard -D
+  Es un eslinter de ayuda
+
+-En archivo .eslintrc.json sustituir con el siguiente codigo:
+
+
+```bash 
+#<-------------------->
+
+{
+  "extends": ["./node_modules/standard/eslintrc.json","next/core-web-vitals"]
+}
+
+#<-------------------->
+```
+
+## Para levantar el localhost 
+ejecutar el comando 
+ npm run dev
+
+
+# Video tutorial
+## Video tutorial
+### Video tutorial
+
+- [canal del midu](https://www.youtube.com/watch?v=tA-_vAz9y78)
+
